@@ -10,23 +10,7 @@ import UIKit
 
 class  ItemsViewController: UITableViewController {
     var itemStore: ItemStore!
-    
-    @IBAction func toggleEditingMode(_ sender: UIButton) {
-        // If you are currently in editing mode...
-        if isEditing {
-            // Change text of button to inform user of state
-            sender.setTitle("Edit", for: .normal)
-            
-            // Turn off editing mode
-            setEditing(false, animated: true)
-        } else {
-            // Change text of button to inform user of state
-            sender.setTitle("Done", for: .normal)
-            
-            // Enter editing mode
-            setEditing(true, animated: true)
-        }
-    }     
+    var imageStore: ImageStore!
     
     @IBAction func addNewItem(_ sender: UIBarButtonItem) {
         // Create a new item and add it to the store
@@ -88,6 +72,9 @@ class  ItemsViewController: UITableViewController {
                 // Remove the item from the store
                 self.itemStore.removeItem(item)
                 
+                // Remove the item's image from the image store
+                self.imageStore.deleteImage(forKey: item.itemKey)
+                
                 // Also remove that row from the table view with an animation
                 self.tableView.deleteRows(at: [indexPath], with: .automatic)
             })
@@ -113,6 +100,7 @@ class  ItemsViewController: UITableViewController {
                 let item = itemStore.allItems[row]
                 let detailViewController = segue.destination as! DetailViewController
                 detailViewController.item = item
+                detailViewController.imageStore = imageStore
             }
         default:
             preconditionFailure("Unexpected segue identifier")

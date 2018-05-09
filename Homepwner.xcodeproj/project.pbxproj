@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AE44607620A0556900EFC76A /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44607520A0556900EFC76A /* ItemCell.swift */; };
 		AE44607A20A1506300EFC76A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44607920A1506300EFC76A /* DetailViewController.swift */; };
+		AE44607C20A2EE8D00EFC76A /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44607B20A2EE8D00EFC76A /* ImageStore.swift */; };
 		AEDB1AD5209F30BB00DAD2AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB1AD4209F30BB00DAD2AB /* AppDelegate.swift */; };
 		AEDB1ADA209F30BB00DAD2AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDB1AD8209F30BB00DAD2AB /* Main.storyboard */; };
 		AEDB1ADC209F30BC00DAD2AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDB1ADB209F30BC00DAD2AB /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		AE44607520A0556900EFC76A /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		AE44607920A1506300EFC76A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AE44607B20A2EE8D00EFC76A /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		AEDB1AD1209F30BB00DAD2AB /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEDB1AD4209F30BB00DAD2AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEDB1AD9209F30BB00DAD2AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				AEDB1B02209F416300DAD2AB /* Item.swift */,
 				AE44607520A0556900EFC76A /* ItemCell.swift */,
 				AEDB1B04209F612A00DAD2AB /* ItemStore.swift */,
+				AE44607B20A2EE8D00EFC76A /* ImageStore.swift */,
 				AEDB1B06209F648500DAD2AB /* ItemsViewController.swift */,
 				AE44607920A1506300EFC76A /* DetailViewController.swift */,
 				AEDB1AD4209F30BB00DAD2AB /* AppDelegate.swift */,
@@ -273,6 +276,7 @@
 				AEDB1AD5209F30BB00DAD2AB /* AppDelegate.swift in Sources */,
 				AE44607A20A1506300EFC76A /* DetailViewController.swift in Sources */,
 				AEDB1B05209F612A00DAD2AB /* ItemStore.swift in Sources */,
+				AE44607C20A2EE8D00EFC76A /* ImageStore.swift in Sources */,
 				AE44607620A0556900EFC76A /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
